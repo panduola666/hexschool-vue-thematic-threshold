@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
     isAdmin: false
   })
     .then(res => {
-      location.href = './login.html';
+      location.href = 'https://panduola666.github.io/hexschool-vue-thematic-threshold/login.html';
     })
     .catch(err => {
       errorMsg.textContent = err.response.data;

@@ -9,7 +9,7 @@ const editorArticle = document.querySelector('.editorArticle');
 axios.get(`${baseUrl}/users/${localStorage.getItem('userId')}`, config)
   .then(res => {
     if (!res.data.isAdmin) {
-      location.href = '../index.html';
+      location.href = 'https://panduola666.github.io/hexschool-vue-thematic-threshold/index.html';
       return;
     }
     getArticle();
@@ -25,7 +25,7 @@ axios.get(`${baseUrl}/users/${localStorage.getItem('userId')}`, config)
         pictureUrl: editorArticle.圖片網址.value
       })
         .then(() => {
-          location.href = '../admin/desk.html';
+          location.href = 'https://panduola666.github.io/hexschool-vue-thematic-threshold/admin/desk.html';
         });
     });
   });

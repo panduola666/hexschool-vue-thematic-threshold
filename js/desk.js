@@ -9,7 +9,7 @@ const tbody = document.querySelector('.allArticlesBody');
 axios.get(`${baseUrl}/users/${localStorage.getItem('userId')}`, config)
   .then(res => {
     if (!res.data.isAdmin) {
-      location.href = '../index.html';
+      location.href = 'https://panduola666.github.io/hexschool-vue-thematic-threshold/index.html';
       return;
     }
     renderTbody();
@@ -43,7 +43,7 @@ async function renderTbody () {
         <td>${item.body}</td>
         <td>
             <input type="button" value="刪除" class="btn btn-outline-danger" data-id="${item.id}">
-            <a href="../admin/editor.html?id=${item.id}" class="btn btn-warning">編輯</a>
+            <a href="https://panduola666.github.io/hexschool-vue-thematic-threshold/admin/editor.html?id=${item.id}" class="btn btn-warning">編輯</a>
         </td>
     </tr>`);
   });

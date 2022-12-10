@@ -9,7 +9,7 @@ async function renderViewList () {
     <h3 class="h3">${item.title}</h3>
     <p>${item.body}</p>
     <div  class="text-end mt-3">
-        <a href="./post.html?article=${item.id}">延伸閱讀</a>
+        <a href="https://panduola666.github.io/hexschool-vue-thematic-threshold/post.html?article=${item.id}">延伸閱讀</a>
     </div>
     </li>`);
   });
