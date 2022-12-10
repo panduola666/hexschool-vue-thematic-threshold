@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     .then(res => {
       localStorage.setItem('token', res.data.accessToken);
       localStorage.setItem('userId', res.data.user.id);
-      location.href = '/index.html';
+      location.href = './index.html';
     })
     .catch(err => {
       console.log(err);

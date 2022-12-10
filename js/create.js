@@ -9,7 +9,7 @@ const createArticle = document.querySelector('.createArticle');
 axios.get(`${baseUrl}/users/${localStorage.getItem('userId')}`, config)
   .then(res => {
     if (!res.data.isAdmin) {
-      location.href = '/';
+      location.href = '../index.html';
       return;
     }
     createArticle.addEventListener('submit', (e) => {
@@ -25,7 +25,7 @@ axios.get(`${baseUrl}/users/${localStorage.getItem('userId')}`, config)
         pictureUrl: createArticle.圖片網址.value
       })
         .then(() => {
-          location.href = '/admin/desk.html';
+          location.href = '../admin/desk.html';
         });
     });
   });

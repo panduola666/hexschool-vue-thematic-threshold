@@ -15,7 +15,7 @@ async function renderSavedList () {
     <img src="${item.article.pictureUrl}" alt="${item.article.title}">
     <h3 class="h3">${item.article.title}</h3>
     <p>${item.article.body}</p>
-    <div class="text-end mt-2"><a href="/post.html?article=${item.article.id}">延伸閱讀</a></div>
+    <div class="text-end mt-2"><a href="../post.html?article=${item.article.id}">延伸閱讀</a></div>
   </li>`);
   });
   savedList.innerHTML = text.join('');

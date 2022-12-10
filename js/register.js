@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
     isAdmin: false
   })
     .then(res => {
-      location.href = '/login.html';
+      location.href = './login.html';
     })
     .catch(err => {
       errorMsg.textContent = err.response.data;

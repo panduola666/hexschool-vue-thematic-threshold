@@ -20,8 +20,8 @@ if (localStorage.getItem('userId')) {
 };
 
 logged.addEventListener('click', (e) => {
-  if (e.target.textContent === '前往後臺') location.href = '/admin/desk.html';
-  if (e.target.textContent === '收藏列表') location.href = '/bookmarks.html';
+  if (e.target.textContent === '前往後臺') location.href = '../admin/desk.html';
+  if (e.target.textContent === '收藏列表') location.href = '../bookmarks.html';
   if (e.target.textContent === '登出') {
     localStorage.clear();
     logged.style.display = 'none';
