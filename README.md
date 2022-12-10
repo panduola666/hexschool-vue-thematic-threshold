@@ -1,2 +1,2 @@
 ## 開啟db
-npm build
+npm start
