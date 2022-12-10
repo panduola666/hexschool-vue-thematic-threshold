@@ -1,4 +1,5 @@
-const baseUrl = 'http://localhost:3000';
+// const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://hexschool-vue-thematic-threshold.vercel.app';
 const config = {
   headers: {
     authorization: `Bearer ${localStorage.getItem('token')}`
