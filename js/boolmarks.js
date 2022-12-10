@@ -3,7 +3,10 @@ renderSavedList();
 savedList.addEventListener('click', (e) => {
   if (e.target.value === '已收藏') {
     axios.delete(`${baseUrl}/saved/${e.target.dataset.id}`)
-      .then(() => renderSavedList);
+      .then(() => {
+        e.target.parentElement.remove();
+        renderSavedList();
+      });
   };
 });
 async function renderSavedList () {
