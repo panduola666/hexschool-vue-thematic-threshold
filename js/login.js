@@ -12,6 +12,7 @@ form.addEventListener('submit', (e) => {
       location.href = '/index.html';
     })
     .catch(err => {
-      errorMsg.textContent = err?.response?.data;
+      console.log(err);
+      errorMsg.textContent = err.response.data;
     });
 });
