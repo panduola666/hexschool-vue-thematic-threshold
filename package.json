@@ -7,7 +7,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "json-server db.json -m ./node_modules/json-server-auth"
+    "build": "json-server db.json -m ./node_modules/json-server-auth"
   },
   "author": "圈圈",
   "license": "ISC",
