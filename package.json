@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.1",
+    "json-server-auth": "^2.1.0"
+  },
+  "name": "attractions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server db.json -m ./node_modules/json-server-auth"
+  },
+  "author": "圈圈",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

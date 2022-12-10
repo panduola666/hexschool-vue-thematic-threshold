@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+header {
+  background-color: rgb(208, 208, 208);
+}
+header a {
+  text-decoration: none;
+}
+header h1 > a {
+  color: #000;
+}
+
+.logged {
+  display: none;
+}
+.logged li:first-child {
+  display: none;
+}
+
+.viewList li, .savedList li {
+  border: 1px solid #ccc;
+  width: 32%;
+  height: 11rem;
+}
+.viewList li p, .savedList li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.errorMsg {
+  color: red;
+}
+
+.saveArticle {
+  display: none;
+}
+
+.deskNav {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+.deskNav a {
+  color: #fff;
+}
+
+.allArticles tr:hover {
+  background-color: rgb(206, 206, 206);
+}
+.allArticles th {
+  border-bottom: 1px solid #000;
+  background-color: rgb(237, 237, 237);
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.allArticles td {
+  vertical-align: middle;
+  padding: 0.3rem;
+}
+.allArticles td:nth-child(2) {
+  width: 5%;
+  text-align: center;
+}
+.allArticles td:nth-child(3) {
+  width: 80%;
+}
+.allArticles td:first-child {
+  color: rgb(255, 69, 69);
+  font-weight: 600;
+}/*# sourceMappingURL=all.css.map */
