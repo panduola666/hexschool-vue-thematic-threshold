@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  background-color: rgb(252, 236, 236);
 }
 
 ol, ul {
@@ -74,9 +75,9 @@ header h1 > a {
 }
 
 .viewList li, .savedList li {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(255, 173, 173);
   width: 32%;
-  height: 11rem;
+  background-color: #fff;
 }
 .viewList li p, .savedList li p {
   overflow: hidden;
@@ -84,6 +85,11 @@ header h1 > a {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.viewList li img, .savedList li img {
+  width: 100%;
+  max-height: 150px;
+  margin-bottom: 1rem;
 }
 
 .errorMsg {
@@ -125,4 +131,22 @@ header h1 > a {
 .allArticles td:first-child {
   color: rgb(255, 69, 69);
   font-weight: 600;
+}
+
+.articleBody {
+  padding: 0.5rem;
+  border: 3px dashed rgb(255, 173, 173);
+}
+
+.indexBtn {
+  border: 1px solid rgb(255, 173, 173);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: rgb(255, 173, 173);
+  text-decoration: none;
+  font-weight: 600;
+}
+.indexBtn:hover {
+  background-color: rgb(255, 173, 173);
+  color: #fff;
 }/*# sourceMappingURL=all.css.map */

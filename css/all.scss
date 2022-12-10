@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    background-color: rgb(252, 236, 236);
 }
 ol, ul {
 	list-style: none;
@@ -67,15 +68,20 @@ header{
 }
 .viewList,.savedList{
     li{
-        border: 1px solid #ccc;
+        border: 1px solid rgb(255, 173, 173);
         width: 32%;
-        height: 11rem;
+        background-color: #fff;
         p{
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
+        }
+        img{
+            width: 100%;
+            max-height:150px;
+            margin-bottom: 1rem;
         }
     }
 }
@@ -116,5 +122,21 @@ header{
             color: rgb(255, 69, 69);
             font-weight: 600;
         }
+    }
+}
+.articleBody{
+    padding: .5rem;
+    border: 3px dashed rgb(255, 173, 173);
+}
+.indexBtn{
+    border: 1px solid rgb(255, 173, 173);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    color: rgb(255, 173, 173);
+    text-decoration: none;
+    font-weight: 600;
+    &:hover{
+        background-color: rgb(255, 173, 173);
+        color: #fff;
     }
 }

@@ -12,8 +12,9 @@ if (localStorage.getItem('userId')) {
     .then(res => {
       if (res.data.isAdmin) logged.children[0].style.display = 'block';
     })
-    .catch(err => {
-      console.log(err);
+    .catch(() => {
+      alert('登入超時');
+      localStorage.clear();
     });
 };
 

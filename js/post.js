@@ -6,10 +6,19 @@ if (localStorage.getItem('userId')) {
   renderSaved();
   savedChange();
 }
+
 async function renderArticleBody () {
   const res = await axios.get(`${baseUrl}/articles/${location.href.split('=')[1]}`);
-  articleBody.innerHTML = JSON.stringify(res.data).replace(/,/g, ',<br>');
+  console.log(res.data);
+  articleBody.innerHTML = `<div class="d-flex align-items-center justify-content-around">
+  <section>
+      <h1 class="h3">${res.data.title}</h1>
+      <p>${res.data.body}</p>
+  </section>
+  <img src="${res.data.pictureUrl}" alt="${res.data.title}" width="350">
+</div>`;
 };
+
 async function renderSaved () {
   const res = await axios.get(`${baseUrl}/users/${localStorage.getItem('userId')}?_embed=saved`);
   res.data.saved.forEach(item => {
